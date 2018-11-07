@@ -1,0 +1,750 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D1BE9102189379A00C6A2BF /* ReportListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1BE90F2189379A00C6A2BF /* ReportListViewController.swift */; };
+		2D34505C2183F3B0007F2D16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D34505B2183F3B0007F2D16 /* AppDelegate.swift */; };
+		2D34505E2183F3B0007F2D16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D34505D2183F3B0007F2D16 /* ViewController.swift */; };
+		2D3450612183F3B0007F2D16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D34505F2183F3B0007F2D16 /* Main.storyboard */; };
+		2D3450632183F3B5007F2D16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D3450622183F3B5007F2D16 /* Assets.xcassets */; };
+		2D3450662183F3B5007F2D16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3450642183F3B5007F2D16 /* LaunchScreen.storyboard */; };
+		2D3450712183F3B6007F2D16 /* FishProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3450702183F3B6007F2D16 /* FishProductTests.swift */; };
+		2D34507C2183F3B6007F2D16 /* FishProductUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D34507B2183F3B6007F2D16 /* FishProductUITests.swift */; };
+		2D3450902183FB33007F2D16 /* FindFishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D34508F2183FB33007F2D16 /* FindFishViewController.swift */; };
+		2D3450922183FB44007F2D16 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3450912183FB44007F2D16 /* HomeViewController.swift */; };
+		2D3450942183FB6C007F2D16 /* IdentifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3450932183FB6C007F2D16 /* IdentifyViewController.swift */; };
+		2D3450962183FB8B007F2D16 /* ReportFishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3450952183FB8B007F2D16 /* ReportFishViewController.swift */; };
+		2D3450982183FCDF007F2D16 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3450972183FCDF007F2D16 /* TabBarViewController.swift */; };
+		2D34509B21840225007F2D16 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D34509A21840225007F2D16 /* Network.swift */; };
+		2D34509F21840749007F2D16 /* SerializationFish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D34509E21840749007F2D16 /* SerializationFish.swift */; };
+		2D3450A221840822007F2D16 /* FishModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3450A121840822007F2D16 /* FishModel.swift */; };
+		2D3450A321840D9A007F2D16 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D34509C21840525007F2D16 /* SwiftyJSON.framework */; };
+		2D3450A421840D9A007F2D16 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D34509C21840525007F2D16 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D3450A72184172D007F2D16 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D3450A62184172D007F2D16 /* Kingfisher.framework */; };
+		2D3450A921841731007F2D16 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D3450A62184172D007F2D16 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D3450AB21841930007F2D16 /* FishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3450AA21841930007F2D16 /* FishDetailViewController.swift */; };
+		2D3450AD21843CF3007F2D16 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3450AC21843CF3007F2D16 /* QuestionModel.swift */; };
+		2D3450AF21843D91007F2D16 /* SerializationQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3450AE21843D91007F2D16 /* SerializationQuestion.swift */; };
+		2D3450B221845111007F2D16 /* FishData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D3450B021845111007F2D16 /* FishData.xcdatamodeld */; };
+		2D3450B42184B61A007F2D16 /* CoreDataManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3450B32184B61A007F2D16 /* CoreDataManage.swift */; };
+		2D912ABA218942BB008DA116 /* SearchFishTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D912AB9218942BB008DA116 /* SearchFishTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D34506D2183F3B6007F2D16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D3450502183F3B0007F2D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D3450572183F3B0007F2D16;
+			remoteInfo = FishProduct;
+		};
+		2D3450782183F3B6007F2D16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D3450502183F3B0007F2D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D3450572183F3B0007F2D16;
+			remoteInfo = FishProduct;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2D3450A521840D9A007F2D16 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2D3450A921841731007F2D16 /* Kingfisher.framework in Embed Frameworks */,
+				2D3450A421840D9A007F2D16 /* SwiftyJSON.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2D1BE90F2189379A00C6A2BF /* ReportListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportListViewController.swift; sourceTree = "<group>"; };
+		2D3450582183F3B0007F2D16 /* FishProduct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishProduct.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D34505B2183F3B0007F2D16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2D34505D2183F3B0007F2D16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2D3450602183F3B0007F2D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D3450622183F3B5007F2D16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D3450652183F3B5007F2D16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D3450672183F3B5007F2D16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D34506C2183F3B6007F2D16 /* FishProductTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FishProductTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D3450702183F3B6007F2D16 /* FishProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishProductTests.swift; sourceTree = "<group>"; };
+		2D3450722183F3B6007F2D16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D3450772183F3B6007F2D16 /* FishProductUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FishProductUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D34507B2183F3B6007F2D16 /* FishProductUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishProductUITests.swift; sourceTree = "<group>"; };
+		2D34507D2183F3B6007F2D16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D34508F2183FB33007F2D16 /* FindFishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindFishViewController.swift; sourceTree = "<group>"; };
+		2D3450912183FB44007F2D16 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2D3450932183FB6C007F2D16 /* IdentifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyViewController.swift; sourceTree = "<group>"; };
+		2D3450952183FB8B007F2D16 /* ReportFishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportFishViewController.swift; sourceTree = "<group>"; };
+		2D3450972183FCDF007F2D16 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		2D34509A21840225007F2D16 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		2D34509C21840525007F2D16 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = "<group>"; };
+		2D34509E21840749007F2D16 /* SerializationFish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializationFish.swift; sourceTree = "<group>"; };
+		2D3450A121840822007F2D16 /* FishModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishModel.swift; sourceTree = "<group>"; };
+		2D3450A62184172D007F2D16 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = "<group>"; };
+		2D3450AA21841930007F2D16 /* FishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishDetailViewController.swift; sourceTree = "<group>"; };
+		2D3450AC21843CF3007F2D16 /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		2D3450AE21843D91007F2D16 /* SerializationQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializationQuestion.swift; sourceTree = "<group>"; };
+		2D3450B121845111007F2D16 /* FishData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FishData.xcdatamodel; sourceTree = "<group>"; };
+		2D3450B32184B61A007F2D16 /* CoreDataManage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManage.swift; sourceTree = "<group>"; };
+		2D912AB9218942BB008DA116 /* SearchFishTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFishTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D3450552183F3B0007F2D16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D3450A321840D9A007F2D16 /* SwiftyJSON.framework in Frameworks */,
+				2D3450A72184172D007F2D16 /* Kingfisher.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D3450692183F3B6007F2D16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D3450742183F3B6007F2D16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D34504F2183F3B0007F2D16 = {
+			isa = PBXGroup;
+			children = (
+				2D3450B021845111007F2D16 /* FishData.xcdatamodeld */,
+				2D3450A62184172D007F2D16 /* Kingfisher.framework */,
+				2D34509C21840525007F2D16 /* SwiftyJSON.framework */,
+				2D34505A2183F3B0007F2D16 /* FishProduct */,
+				2D34506F2183F3B6007F2D16 /* FishProductTests */,
+				2D34507A2183F3B6007F2D16 /* FishProductUITests */,
+				2D3450592183F3B0007F2D16 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D3450592183F3B0007F2D16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D3450582183F3B0007F2D16 /* FishProduct.app */,
+				2D34506C2183F3B6007F2D16 /* FishProductTests.xctest */,
+				2D3450772183F3B6007F2D16 /* FishProductUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D34505A2183F3B0007F2D16 /* FishProduct */ = {
+			isa = PBXGroup;
+			children = (
+				2D3450A021840816007F2D16 /* Model */,
+				2D3450992184020F007F2D16 /* Network */,
+				2D34508D2183FB1D007F2D16 /* FindFish */,
+				2D34508C2183FB1D007F2D16 /* Home */,
+				2D34508B2183FB1D007F2D16 /* IdentifyFish */,
+				2D34508E2183FB1D007F2D16 /* ReportFish */,
+				2D34505B2183F3B0007F2D16 /* AppDelegate.swift */,
+				2D34505D2183F3B0007F2D16 /* ViewController.swift */,
+				2D3450972183FCDF007F2D16 /* TabBarViewController.swift */,
+				2D34505F2183F3B0007F2D16 /* Main.storyboard */,
+				2D3450622183F3B5007F2D16 /* Assets.xcassets */,
+				2D3450642183F3B5007F2D16 /* LaunchScreen.storyboard */,
+				2D3450672183F3B5007F2D16 /* Info.plist */,
+			);
+			path = FishProduct;
+			sourceTree = "<group>";
+		};
+		2D34506F2183F3B6007F2D16 /* FishProductTests */ = {
+			isa = PBXGroup;
+			children = (
+				2D3450702183F3B6007F2D16 /* FishProductTests.swift */,
+				2D3450722183F3B6007F2D16 /* Info.plist */,
+			);
+			path = FishProductTests;
+			sourceTree = "<group>";
+		};
+		2D34507A2183F3B6007F2D16 /* FishProductUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2D34507B2183F3B6007F2D16 /* FishProductUITests.swift */,
+				2D34507D2183F3B6007F2D16 /* Info.plist */,
+			);
+			path = FishProductUITests;
+			sourceTree = "<group>";
+		};
+		2D34508B2183FB1D007F2D16 /* IdentifyFish */ = {
+			isa = PBXGroup;
+			children = (
+				2D3450932183FB6C007F2D16 /* IdentifyViewController.swift */,
+				2D3450AE21843D91007F2D16 /* SerializationQuestion.swift */,
+			);
+			path = IdentifyFish;
+			sourceTree = "<group>";
+		};
+		2D34508C2183FB1D007F2D16 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2D3450912183FB44007F2D16 /* HomeViewController.swift */,
+				2D912AB9218942BB008DA116 /* SearchFishTableViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2D34508D2183FB1D007F2D16 /* FindFish */ = {
+			isa = PBXGroup;
+			children = (
+				2D34508F2183FB33007F2D16 /* FindFishViewController.swift */,
+				2D3450AA21841930007F2D16 /* FishDetailViewController.swift */,
+				2D34509E21840749007F2D16 /* SerializationFish.swift */,
+			);
+			path = FindFish;
+			sourceTree = "<group>";
+		};
+		2D34508E2183FB1D007F2D16 /* ReportFish */ = {
+			isa = PBXGroup;
+			children = (
+				2D3450952183FB8B007F2D16 /* ReportFishViewController.swift */,
+				2D1BE90F2189379A00C6A2BF /* ReportListViewController.swift */,
+			);
+			path = ReportFish;
+			sourceTree = "<group>";
+		};
+		2D3450992184020F007F2D16 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2D34509A21840225007F2D16 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2D3450A021840816007F2D16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D3450A121840822007F2D16 /* FishModel.swift */,
+				2D3450AC21843CF3007F2D16 /* QuestionModel.swift */,
+				2D3450B32184B61A007F2D16 /* CoreDataManage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D3450572183F3B0007F2D16 /* FishProduct */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D3450802183F3B6007F2D16 /* Build configuration list for PBXNativeTarget "FishProduct" */;
+			buildPhases = (
+				2D3450542183F3B0007F2D16 /* Sources */,
+				2D3450552183F3B0007F2D16 /* Frameworks */,
+				2D3450562183F3B0007F2D16 /* Resources */,
+				2D3450A521840D9A007F2D16 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FishProduct;
+			productName = FishProduct;
+			productReference = 2D3450582183F3B0007F2D16 /* FishProduct.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D34506B2183F3B6007F2D16 /* FishProductTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D3450832183F3B6007F2D16 /* Build configuration list for PBXNativeTarget "FishProductTests" */;
+			buildPhases = (
+				2D3450682183F3B6007F2D16 /* Sources */,
+				2D3450692183F3B6007F2D16 /* Frameworks */,
+				2D34506A2183F3B6007F2D16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D34506E2183F3B6007F2D16 /* PBXTargetDependency */,
+			);
+			name = FishProductTests;
+			productName = FishProductTests;
+			productReference = 2D34506C2183F3B6007F2D16 /* FishProductTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2D3450762183F3B6007F2D16 /* FishProductUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D3450862183F3B6007F2D16 /* Build configuration list for PBXNativeTarget "FishProductUITests" */;
+			buildPhases = (
+				2D3450732183F3B6007F2D16 /* Sources */,
+				2D3450742183F3B6007F2D16 /* Frameworks */,
+				2D3450752183F3B6007F2D16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D3450792183F3B6007F2D16 /* PBXTargetDependency */,
+			);
+			name = FishProductUITests;
+			productName = FishProductUITests;
+			productReference = 2D3450772183F3B6007F2D16 /* FishProductUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D3450502183F3B0007F2D16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = PPLINGO;
+				TargetAttributes = {
+					2D3450572183F3B0007F2D16 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					2D34506B2183F3B6007F2D16 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 2D3450572183F3B0007F2D16;
+					};
+					2D3450762183F3B6007F2D16 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 2D3450572183F3B0007F2D16;
+					};
+				};
+			};
+			buildConfigurationList = 2D3450532183F3B0007F2D16 /* Build configuration list for PBXProject "FishProduct" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D34504F2183F3B0007F2D16;
+			productRefGroup = 2D3450592183F3B0007F2D16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D3450572183F3B0007F2D16 /* FishProduct */,
+				2D34506B2183F3B6007F2D16 /* FishProductTests */,
+				2D3450762183F3B6007F2D16 /* FishProductUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D3450562183F3B0007F2D16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D3450662183F3B5007F2D16 /* LaunchScreen.storyboard in Resources */,
+				2D3450632183F3B5007F2D16 /* Assets.xcassets in Resources */,
+				2D3450612183F3B0007F2D16 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D34506A2183F3B6007F2D16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D3450752183F3B6007F2D16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D3450542183F3B0007F2D16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1BE9102189379A00C6A2BF /* ReportListViewController.swift in Sources */,
+				2D3450922183FB44007F2D16 /* HomeViewController.swift in Sources */,
+				2D3450942183FB6C007F2D16 /* IdentifyViewController.swift in Sources */,
+				2D34509B21840225007F2D16 /* Network.swift in Sources */,
+				2D3450AD21843CF3007F2D16 /* QuestionModel.swift in Sources */,
+				2D3450A221840822007F2D16 /* FishModel.swift in Sources */,
+				2D3450902183FB33007F2D16 /* FindFishViewController.swift in Sources */,
+				2D34505E2183F3B0007F2D16 /* ViewController.swift in Sources */,
+				2D3450982183FCDF007F2D16 /* TabBarViewController.swift in Sources */,
+				2D912ABA218942BB008DA116 /* SearchFishTableViewController.swift in Sources */,
+				2D3450AB21841930007F2D16 /* FishDetailViewController.swift in Sources */,
+				2D3450962183FB8B007F2D16 /* ReportFishViewController.swift in Sources */,
+				2D34505C2183F3B0007F2D16 /* AppDelegate.swift in Sources */,
+				2D3450B221845111007F2D16 /* FishData.xcdatamodeld in Sources */,
+				2D3450B42184B61A007F2D16 /* CoreDataManage.swift in Sources */,
+				2D34509F21840749007F2D16 /* SerializationFish.swift in Sources */,
+				2D3450AF21843D91007F2D16 /* SerializationQuestion.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D3450682183F3B6007F2D16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D3450712183F3B6007F2D16 /* FishProductTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D3450732183F3B6007F2D16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D34507C2183F3B6007F2D16 /* FishProductUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D34506E2183F3B6007F2D16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D3450572183F3B0007F2D16 /* FishProduct */;
+			targetProxy = 2D34506D2183F3B6007F2D16 /* PBXContainerItemProxy */;
+		};
+		2D3450792183F3B6007F2D16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D3450572183F3B0007F2D16 /* FishProduct */;
+			targetProxy = 2D3450782183F3B6007F2D16 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2D34505F2183F3B0007F2D16 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D3450602183F3B0007F2D16 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2D3450642183F3B5007F2D16 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D3450652183F3B5007F2D16 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D34507E2183F3B6007F2D16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2D34507F2183F3B6007F2D16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D3450812183F3B6007F2D16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6EJ4VQPLC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = FishProduct/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PPLINGO.FishProduct;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D3450822183F3B6007F2D16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6EJ4VQPLC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = FishProduct/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PPLINGO.FishProduct;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2D3450842183F3B6007F2D16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6EJ4VQPLC;
+				INFOPLIST_FILE = FishProductTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PPLINGO.FishProductTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FishProduct.app/FishProduct";
+			};
+			name = Debug;
+		};
+		2D3450852183F3B6007F2D16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6EJ4VQPLC;
+				INFOPLIST_FILE = FishProductTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PPLINGO.FishProductTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FishProduct.app/FishProduct";
+			};
+			name = Release;
+		};
+		2D3450872183F3B6007F2D16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6EJ4VQPLC;
+				INFOPLIST_FILE = FishProductUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PPLINGO.FishProductUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FishProduct;
+			};
+			name = Debug;
+		};
+		2D3450882183F3B6007F2D16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6EJ4VQPLC;
+				INFOPLIST_FILE = FishProductUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = PPLINGO.FishProductUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FishProduct;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D3450532183F3B0007F2D16 /* Build configuration list for PBXProject "FishProduct" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D34507E2183F3B6007F2D16 /* Debug */,
+				2D34507F2183F3B6007F2D16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D3450802183F3B6007F2D16 /* Build configuration list for PBXNativeTarget "FishProduct" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D3450812183F3B6007F2D16 /* Debug */,
+				2D3450822183F3B6007F2D16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D3450832183F3B6007F2D16 /* Build configuration list for PBXNativeTarget "FishProductTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D3450842183F3B6007F2D16 /* Debug */,
+				2D3450852183F3B6007F2D16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D3450862183F3B6007F2D16 /* Build configuration list for PBXNativeTarget "FishProductUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D3450872183F3B6007F2D16 /* Debug */,
+				2D3450882183F3B6007F2D16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2D3450B021845111007F2D16 /* FishData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2D3450B121845111007F2D16 /* FishData.xcdatamodel */,
+			);
+			currentVersion = 2D3450B121845111007F2D16 /* FishData.xcdatamodel */;
+			path = FishData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2D3450502183F3B0007F2D16 /* Project object */;
+}

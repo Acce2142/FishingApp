@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.18" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Fish" representedClassName="Fish" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="commonnames" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fishdescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fishid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="regions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="restrictions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="scientificname" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Questions" representedClassName="Questions" syncable="YES" codeGenerationType="class">
+        <attribute name="question" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="questionid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="response" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Fish" positionX="-63" positionY="-18" width="128" height="165"/>
+        <element name="Questions" positionX="-54" positionY="54" width="128" height="90"/>
+    </elements>
+</model>
