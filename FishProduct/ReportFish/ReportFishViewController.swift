@@ -79,27 +79,40 @@ class ReportFishViewController: UIViewController,UITableViewDelegate,UITableView
     }
     
     @IBAction func clickReport(_ sender: UIButton) {
-        Network.sharedTool().ReportFish(fishid: fm.fish_id,image: fish_imageview.image,fishName: fm.fish_name, date: dateStr!, time: timeStr!, lon: longitudeStr!, lat: latitudeStr!) { (ret) in
-            if ret{
-                let alertController = UIAlertController(title: "Tips",
-                                                        message: "Report success", preferredStyle: .alert)
-                let okAction = UIAlertAction(title: "OK", style: .default, handler: {
-                    action in
-                    self.navigationController?.popViewController(animated: true)
-                })
-                alertController.addAction(okAction)
-                self.present(alertController, animated: true, completion: nil)
-            }
-            else{
-                let alertController = UIAlertController(title: "Tips",
-                                                        message: "Report fail", preferredStyle: .alert)
-                let okAction = UIAlertAction(title: "OK", style: .default, handler: {
-                    action in
-                })
-                alertController.addAction(okAction)
-                self.present(alertController, animated: true, completion: nil)
+        switch CLLocationManager.authorizationStatus() {
+        case .notDetermined, .restricted, .denied:
+            let alertController = UIAlertController(title: "Error",
+                                                    message: "Location service is disable", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: {
+                action in
+                self.navigationController?.popViewController(animated: true)
+            })
+            alertController.addAction(okAction)
+            self.present(alertController, animated: true, completion: nil)
+        case .authorizedWhenInUse, .authorizedAlways:
+            Network.sharedTool().ReportFish(fishid: fm.fish_id,image: fish_imageview.image,fishName: fm.fish_name, date: dateStr!, time: timeStr!, lon: longitudeStr!, lat: latitudeStr!) { (ret) in
+                if ret{
+                    let alertController = UIAlertController(title: "Tips",
+                                                            message: "Report success", preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "OK", style: .default, handler: {
+                        action in
+                        self.navigationController?.popViewController(animated: true)
+                    })
+                    alertController.addAction(okAction)
+                    self.present(alertController, animated: true, completion: nil)
+                }
+                else{
+                    let alertController = UIAlertController(title: "Tips",
+                                                            message: "Report fail", preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "OK", style: .default, handler: {
+                        action in
+                    })
+                    alertController.addAction(okAction)
+                    self.present(alertController, animated: true, completion: nil)
+                }
             }
         }
+        
         
     }
 

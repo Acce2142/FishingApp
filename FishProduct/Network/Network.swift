@@ -67,7 +67,16 @@ class Network: NSObject {
             }
         }).resume()
     }
+    func IdentifyFish(image:UIImage?,date:String,time:String,lon:String,lat:String,callBack:@escaping (Bool) ->()) -> Void {
+        
+        guard let url = URL(string: "http://www.partiklezoo.com/fish/?action=identifyfish&") else {return};
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        
+        
+        
     
+    }
     private func getRandomBoundary() -> String {
         return String(format: "WebKitFormBoundary%08x%08x", arc4random(), arc4random())
     }
