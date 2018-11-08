@@ -13,8 +13,10 @@ class FindFishViewController: UIViewController,UITableViewDelegate,UITableViewDa
   
   
     @IBOutlet var mytableView: UITableView!
+    var internet:Bool = true;
     let fishes :NSMutableArray = NSMutableArray.init()
 //    var mytableView : UITableView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
@@ -35,7 +37,17 @@ class FindFishViewController: UIViewController,UITableViewDelegate,UITableViewDa
     func getFishesList() -> Void {
         Network.sharedTool().GetFishList(urlstr: "http://www.partiklezoo.com/fish/?action=fishlist") { (dataArray, true) in
             if dataArray == nil{
-                return
+                
+                self.internet = false
+                DispatchQueue.main.async {
+                    let arr:[FishModel] = CoreDataManage.sharedCoreData().FindAllFish()
+                    if arr.count > 0 {
+                        self.fishes.removeAllObjects()
+                        self.fishes.addObjects(from: arr as! [Any])
+                        self.mytableView?.reloadData()
+                    }
+                }
+                
             }else {
                 DispatchQueue.main.async {
                     self.fishes.removeAllObjects()
@@ -64,29 +76,31 @@ class FindFishViewController: UIViewController,UITableViewDelegate,UITableViewDa
             view.removeFromSuperview()
         }
         let fm:FishModel = self.fishes[indexPath.row] as! FishModel
-        
+       
         let name_lb=UILabel(frame:CGRect(origin:CGPoint(x:100,y:8),size:CGSize(width:200,height:20)))
         name_lb.backgroundColor=UIColor.white
         name_lb.text = fm.fish_name
         name_lb.textColor = UIColor.black
         name_lb.font=UIFont.systemFont(ofSize:14)
         cells.contentView.addSubview(name_lb)
-        
+            
         let url = URL(string: String(format: "http://partiklezoo.com/fish/%@", fm.image))
         let fish_imageView = UIImageView(frame:CGRect(origin:CGPoint(x:20,y:5),size:CGSize(width:50,height:50)))
         fish_imageView.layer.cornerRadius = 8
         fish_imageView.layer.masksToBounds = true
         fish_imageView.kf.setImage(with: url)
         cells.contentView.addSubview(fish_imageView)
-        
+            
         let commonName_lb = UILabel(frame:CGRect(origin:CGPoint(x:100,y:30),size:CGSize(width:200,height:20)))
         commonName_lb.backgroundColor = UIColor.white
         commonName_lb.text = fm.scientificname
         commonName_lb.textColor = UIColor.black
         commonName_lb.font = UIFont.systemFont(ofSize:14)
         cells.contentView.addSubview(commonName_lb)
-        
+            
         return cells
+        
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)  {

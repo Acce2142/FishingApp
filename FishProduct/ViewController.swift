@@ -21,11 +21,12 @@ class ViewController: UIViewController {
         agreement_lb.font=UIFont.systemFont(ofSize:14)
         agreement_lb.numberOfLines = 0
  
-        let agreebtn = UIButton(frame:CGRect(x:view.frame.width / 2 - 50, y:view.frame.height -  60, width:100, height:30))
+        let agreebtn = UIButton(frame:CGRect(x:view.frame.width / 2 - 50, y:view.frame.height -  38, width:100, height:30))
+        
         agreebtn.setTitle("Agree", for: .normal)
         agreebtn.backgroundColor = UIColor.red
         agreebtn.titleLabel?.font = UIFont.systemFont(ofSize: 20)
-        agreebtn .addTarget(self, action: #selector(clickAgree(_:)), for: .touchUpInside)
+        agreebtn.addTarget(self, action: #selector(clickAgree(_:)), for: .touchUpInside)
         self.view.addSubview(agreebtn)
         
     

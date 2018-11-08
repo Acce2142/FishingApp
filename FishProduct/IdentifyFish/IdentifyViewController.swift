@@ -95,7 +95,14 @@ class IdentifyViewController: UIViewController,UITableViewDelegate,UITableViewDa
     func getQuestions() -> Void {
         Network.sharedTool().GetQuestions(urlstr: "http://partiklezoo.com/fish/?action=questions") { (dataArray, true) in
             if dataArray == nil{
-                return
+                DispatchQueue.main.async {
+                    let arr:[QuestionModel] = CoreDataManage.sharedCoreData().FindAllQuestions()
+                    if arr.count > 0 {
+                        self.questionArr.removeAllObjects()
+                        self.questionArr.addObjects(from: arr as! [Any])
+                        self.questionTbview?.reloadData()
+                    }
+                }
             }else {
                 DispatchQueue.main.async {
                     self.questionArr.removeAllObjects()

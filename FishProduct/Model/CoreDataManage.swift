@@ -160,6 +160,24 @@ class CoreDataManage: NSObject {
         
         return []
     }
+    func FindAllQuestions() -> [QuestionModel] {
+        let app = UIApplication.shared.delegate as! AppDelegate
+        let context = app.persistentContainer.viewContext
+        let request:NSFetchRequest = Questions.fetchRequest()
+        
+        do{
+            let result =  try context.fetch(request)
+            var arr :[QuestionModel] = [] as! [QuestionModel]
+            for cf in result{
+                arr.append(CoreQuestionsToQuestionsModel(QUE: cf))
+            }
+            return arr
+        }catch{
+            fatalError("query fail")
+        }
+        
+        return []
+    }
     
     func SearchFishByKeyword(text:String) -> [FishModel] {
         let app = UIApplication.shared.delegate as! AppDelegate
@@ -194,6 +212,13 @@ class CoreDataManage: NSObject {
         fish.fish_restriction = cfish.restrictions!
         fish.scientificname = cfish.scientificname!
         return fish
+    }
+    func CoreQuestionsToQuestionsModel(QUE:Questions) -> QuestionModel {
+        let QA = QuestionModel.init()
+        QA.id = QUE.questionid!
+        QA.question = QUE.question!
+        QA.responses = QUE.response!
+        return QA
     }
     
 }

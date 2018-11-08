@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18FEDBD72193BD04008CB3BA /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FEDBD62193BD04008CB3BA /* UploadViewController.swift */; };
 		2D1BE9102189379A00C6A2BF /* ReportListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1BE90F2189379A00C6A2BF /* ReportListViewController.swift */; };
 		2D34505C2183F3B0007F2D16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D34505B2183F3B0007F2D16 /* AppDelegate.swift */; };
 		2D34505E2183F3B0007F2D16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D34505D2183F3B0007F2D16 /* ViewController.swift */; };
@@ -68,6 +69,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		18FEDBD62193BD04008CB3BA /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		2D1BE90F2189379A00C6A2BF /* ReportListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportListViewController.swift; sourceTree = "<group>"; };
 		2D3450582183F3B0007F2D16 /* FishProduct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishProduct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D34505B2183F3B0007F2D16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 		2D34508B2183FB1D007F2D16 /* IdentifyFish */ = {
 			isa = PBXGroup;
 			children = (
+				18FEDBD62193BD04008CB3BA /* UploadViewController.swift */,
 				2D3450932183FB6C007F2D16 /* IdentifyViewController.swift */,
 				2D3450AE21843D91007F2D16 /* SerializationQuestion.swift */,
 			);
@@ -388,6 +391,7 @@
 				2D3450AB21841930007F2D16 /* FishDetailViewController.swift in Sources */,
 				2D3450962183FB8B007F2D16 /* ReportFishViewController.swift in Sources */,
 				2D34505C2183F3B0007F2D16 /* AppDelegate.swift in Sources */,
+				18FEDBD72193BD04008CB3BA /* UploadViewController.swift in Sources */,
 				2D3450B221845111007F2D16 /* FishData.xcdatamodeld in Sources */,
 				2D3450B42184B61A007F2D16 /* CoreDataManage.swift in Sources */,
 				2D34509F21840749007F2D16 /* SerializationFish.swift in Sources */,
