@@ -41,7 +41,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="oPW-zm-Uie">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oPW-zm-Uie">
                                 <rect key="frame" x="12" y="172" width="1000" height="1075"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="164" id="pZ3-LE-TNJ"/>
@@ -279,6 +279,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="5Zg-f6-5fM"/>
                     <connections>
                         <outlet property="FishImage" destination="Wj8-It-UbD" id="Aeu-jb-vZD"/>
+                        <outlet property="Map" destination="oPW-zm-Uie" id="9Po-xS-ajv"/>
                         <outlet property="photoButton" destination="FiL-lE-u8p" id="Z4I-Tt-RNM"/>
                     </connections>
                 </viewController>

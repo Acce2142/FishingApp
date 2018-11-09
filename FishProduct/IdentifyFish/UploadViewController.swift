@@ -9,6 +9,8 @@
 import UIKit
 import SwiftyJSON
 import CoreLocation
+import MapKit
+
 class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate{
     var dateStr = ""
     var timeStr = ""
@@ -17,6 +19,7 @@ class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UI
     var locationManager: CLLocationManager?
     @IBOutlet weak var FishImage: UIImageView!
     @IBOutlet weak var photoButton: UIButton!
+    @IBOutlet weak var Map: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.locationFunc()
@@ -26,6 +29,8 @@ class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UI
         let currLocation : CLLocation = locations.last!
         longtitube = "\(currLocation.coordinate.longitude)"
         latitube = "\(currLocation.coordinate.latitude)"
+        
+        
     }
     func locationFunc() -> Void {
         locationManager = CLLocationManager()
@@ -35,6 +40,10 @@ class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UI
         locationManager?.requestAlwaysAuthorization()
         if (CLLocationManager.locationServicesEnabled()){
             locationManager?.startUpdatingLocation()
+            if let userLocation = locationManager?.location?.coordinate {
+                let viewRegion = MKCoordinateRegion(center: userLocation, latitudinalMeters: 100, longitudinalMeters: 100)
+                Map.setRegion(viewRegion, animated: false)
+            }
             print("start location")
         }else{
             print("location disabled")
