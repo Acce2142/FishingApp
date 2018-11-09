@@ -2,8 +2,6 @@
 //  Network.swift
 //  FishProduct
 //
-//  Created by wangbo on 2018/10/27.
-//  Copyright © 2018年 PPLINGO. All rights reserved.
 //
 
 import UIKit
@@ -69,39 +67,7 @@ class Network: NSObject {
         }).resume()
     }
     
-    func IdentifyFish(image:UIImage,date_Str:String,
-        time_Str:String,lon:String,lat:String,callBack:@escaping (Bool) ->()) -> Void {
-        /*
-        guard let url = URL(string: "http://www.partiklezoo.com/fish/?action=identifyfish&") else {return};
-            print(image)
-        let params = ["photo" : image,"date":date_Str,"time" :time_Str, "longitube" :lon, "latitube" : lat] as [String : Any]
-        do{
-            let data = try? JSONSerialization.data(withJSONObject: params, options: [])
-            var request = URLRequest(url: url)
-            request.httpMethod = "POST"
-            request.httpBody = data
-            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-            request.addValue("application/json", forHTTPHeaderField: "Accept")
-            URLSession.shared.dataTask(with: request, completionHandler: {
-                (data, rsp, error) in
-                if error != nil{
-                    callBack(false)
-                }
-                else{
-                    let dic = JSON(data!)
-                    if dic["success"].string == "true" {
-                        callBack(true)
-                    }
-                    else{
-                        callBack(false)
-                    }
-                }
-            }).resume()
-            
-        }catch{
-            callBack(false)
-        }
-     */
+    func IdentifyFish(image:UIImage,date_Str:String,time_Str:String,lon:String,lat:String,callBack:@escaping (Bool) ->()) -> Void {
         Alamofire.upload(
             multipartFormData: { multipartFormData in
                 multipartFormData.append("photo.jpeg".data(using: String.Encoding.utf8)!, withName: "photo")
