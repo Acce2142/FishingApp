@@ -34,6 +34,8 @@
 		2D3450B221845111007F2D16 /* FishData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D3450B021845111007F2D16 /* FishData.xcdatamodeld */; };
 		2D3450B42184B61A007F2D16 /* CoreDataManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3450B32184B61A007F2D16 /* CoreDataManage.swift */; };
 		2D912ABA218942BB008DA116 /* SearchFishTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D912AB9218942BB008DA116 /* SearchFishTableViewController.swift */; };
+		87322BCC2195224D0088990A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87322BCB2195224D0088990A /* Alamofire.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		87322BCE219526010088990A /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 87322BCB2195224D0088990A /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,16 @@
 				2D3450A421840D9A007F2D16 /* SwiftyJSON.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87322BCD219525F20088990A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				87322BCE219526010088990A /* Alamofire.framework in CopyFiles */,
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -100,6 +112,7 @@
 		2D3450B121845111007F2D16 /* FishData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FishData.xcdatamodel; sourceTree = "<group>"; };
 		2D3450B32184B61A007F2D16 /* CoreDataManage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManage.swift; sourceTree = "<group>"; };
 		2D912AB9218942BB008DA116 /* SearchFishTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFishTableViewController.swift; sourceTree = "<group>"; };
+		87322BCB2195224D0088990A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +121,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D3450A321840D9A007F2D16 /* SwiftyJSON.framework in Frameworks */,
+				87322BCC2195224D0088990A /* Alamofire.framework in Frameworks */,
 				2D3450A72184172D007F2D16 /* Kingfisher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,6 +146,7 @@
 		2D34504F2183F3B0007F2D16 = {
 			isa = PBXGroup;
 			children = (
+				87322BCB2195224D0088990A /* Alamofire.framework */,
 				2D3450B021845111007F2D16 /* FishData.xcdatamodeld */,
 				2D3450A62184172D007F2D16 /* Kingfisher.framework */,
 				2D34509C21840525007F2D16 /* SwiftyJSON.framework */,
@@ -253,6 +268,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D3450802183F3B6007F2D16 /* Build configuration list for PBXNativeTarget "FishProduct" */;
 			buildPhases = (
+				87322BCD219525F20088990A /* CopyFiles */,
 				2D3450542183F3B0007F2D16 /* Sources */,
 				2D3450552183F3B0007F2D16 /* Frameworks */,
 				2D3450562183F3B0007F2D16 /* Resources */,

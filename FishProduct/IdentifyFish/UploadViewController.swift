@@ -47,9 +47,32 @@ class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UI
         dateStr = timeFormatter.string(from: date as Date) as String
         timeFormatter.dateFormat = "HH:mm"
         timeStr = timeFormatter.string(from: date as Date) as String
+        Network.sharedTool().IdentifyFish(image: FishImage.image!, date_Str: dateStr, time_Str: timeStr, lon: longtitube, lat: latitube) { (ret) in
+            if ret{
+                //fine
+                let alertController = UIAlertController(title: "Tips",
+                                                        message: "Upload success", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "OK", style: .default, handler: {
+                    action in
+                    self.navigationController?.popViewController(animated: true)
+                })
+                alertController.addAction(okAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
+            else{
+                //fine
+                let alertController = UIAlertController(title: "Tips",
+                                                        message: "Upload fail", preferredStyle: .alert)
+                let okAction = UIAlertAction(title: "OK", style: .default, handler: {
+                    action in
+                })
+                alertController.addAction(okAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
+        }
         if(FishImage.image == nil){
             let alertController = UIAlertController(title: "Tips",
-                                                   message: "Please choose a image first", preferredStyle: .alert)
+                                                    message: "Please choose a image first", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "OK", style: .default, handler: {
                 action in
                 self.navigationController?.popViewController(animated: true)
@@ -67,7 +90,7 @@ class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UI
                 alertController.addAction(okAction)
                 self.present(alertController, animated: true, completion: nil)
             case .authorizedAlways, .authorizedWhenInUse:
-                Network.sharedTool().IdentifyFish(image: FishImage.image, date: dateStr, time: timeStr, lon: longtitube, lat: latitube) { (ret) in
+                Network.sharedTool().IdentifyFish(image: FishImage.image!, date_Str: dateStr, time_Str: timeStr, lon: longtitube, lat: latitube) { (ret) in
                     if ret{
                         let alertController = UIAlertController(title: "Tips",
                                                                 message: "Upload success", preferredStyle: .alert)
@@ -88,9 +111,7 @@ class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UI
                         self.present(alertController, animated: true, completion: nil)
                     }
                 }
-            }
-        }
-        
+            }        }
     }
     
     @IBAction func Photo(_ sender: Any) {
