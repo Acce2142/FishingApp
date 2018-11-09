@@ -36,7 +36,7 @@ class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UI
             locationManager?.startUpdatingLocation()
             if let userLocation = locationManager?.location?.coordinate {
                 let viewRegion = MKCoordinateRegion(center: userLocation, latitudinalMeters: 100, longitudinalMeters: 100)
-                Map.setRegion(viewRegion, animated: false)
+                Map.setRegion(viewRegion, animated: true)
             }
             print("start location")
         }else{

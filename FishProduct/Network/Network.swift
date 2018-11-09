@@ -70,6 +70,8 @@ class Network: NSObject {
     func IdentifyFish(image:UIImage,date_Str:String,time_Str:String,lon:String,lat:String,callBack:@escaping (Bool) ->()) -> Void {
         Alamofire.upload(
             multipartFormData: { multipartFormData in
+               
+                multipartFormData.append(image.jpegData(compressionQuality: 1)!, withName: "image", fileName: "swift_file.jpeg", mimeType: "image/jpeg")
                 multipartFormData.append("photo.jpeg".data(using: String.Encoding.utf8)!, withName: "photo")
                 multipartFormData.append("identifyfish".data(using: String.Encoding.utf8)!, withName: "action")
                 multipartFormData.append(date_Str.data(using: String.Encoding.utf8)!, withName: "date")

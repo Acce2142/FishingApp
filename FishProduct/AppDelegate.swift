@@ -12,20 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-//    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-//         NotificationCenter.default.addObserver(self, selector: #selector(gotoHome), name: NSNotification.Name(rawValue:"GOTI_HOME"), object: nil)
-//        self.window = UIWindow(frame:UIScreen.main.bounds)
-//        let rootVC = ViewController()
-//        self.window?.rootViewController = rootVC
-//        let rootVC = TabBarViewController()
-//        self.window?.rootViewController = rootVC
-//        
-//        self.window!.makeKeyAndVisible()
-//
-//
-//        // Override point for customization after application launch.
-//        return true
-//    }
+
     @objc func gotoHome(nofi : Notification){
         let rootVC = TabBarViewController()
         self.window?.rootViewController = rootVC
