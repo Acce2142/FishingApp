@@ -1,10 +1,4 @@
-//
-//  UploadViewController.swift
-//  FishProduct
-//
-//  Created by apple on 8/11/18.
-//  Copyright © 2018 PPLINGO. All rights reserved.
-//
+
 
 import UIKit
 import SwiftyJSON
@@ -126,7 +120,7 @@ class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UI
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         actionSheet.popoverPresentationController?.barButtonItem = self.navigationItem.rightBarButtonItem
         actionSheet.popoverPresentationController?.sourceView = self.view;
-        actionSheet.popoverPresentationController?.sourceRect = CGRect(x:self.view.frame.size.width / 2 - 40, y:view.frame.height - 90, width: 100, height: 40);
+        actionSheet.popoverPresentationController?.sourceRect = CGRect(x:self.view.frame.size.width / 2 - 40, y:view.frame.height, width: 100, height: 40);
         self.present(actionSheet, animated: true, completion: nil)
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
