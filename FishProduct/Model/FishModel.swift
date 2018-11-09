@@ -2,7 +2,6 @@
 //  FishModel.swift
 //  FishProduct
 //
-
 //
 
 import UIKit

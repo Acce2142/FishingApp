@@ -90,7 +90,7 @@ class ReportFishViewController: UIViewController,UITableViewDelegate,UITableView
         case .authorizedWhenInUse, .authorizedAlways:
             Network.sharedTool().ReportFish(fishid: fm.fish_id,image: fish_imageview.image,fishName: fm.fish_name, date: dateStr!, time: timeStr!, lon: longitudeStr!, lat: latitudeStr!) { (ret) in
                 if ret{
-                    let alertController = UIAlertController(title: "Tips",
+                    let alertController = UIAlertController(title: "Message",
                                                             message: "Report success", preferredStyle: .alert)
                     let okAction = UIAlertAction(title: "OK", style: .default, handler: {
                         action in
@@ -100,7 +100,7 @@ class ReportFishViewController: UIViewController,UITableViewDelegate,UITableView
                     self.present(alertController, animated: true, completion: nil)
                 }
                 else{
-                    let alertController = UIAlertController(title: "Tips",
+                    let alertController = UIAlertController(title: "Message",
                                                             message: "Report fail", preferredStyle: .alert)
                     let okAction = UIAlertAction(title: "OK", style: .default, handler: {
                         action in

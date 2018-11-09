@@ -94,10 +94,12 @@ class Network: NSObject {
                                 }
                             }
                         case .failure(_):
-                            break
+                            callBack(false)
+                            
                         }
                     }
                 case .failure(let encodingError):
+                    callBack(false)
                     print(encodingError)
                 }
                 

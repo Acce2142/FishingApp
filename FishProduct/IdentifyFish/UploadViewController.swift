@@ -64,7 +64,7 @@ class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UI
             case .authorizedAlways, .authorizedWhenInUse:
                 Network.sharedTool().IdentifyFish(image: FishImage.image!, date_Str: dateStr, time_Str: timeStr, lon: longtitube, lat: latitube) { (ret) in
                     if ret{
-                        let alertController = UIAlertController(title: "Tips",
+                        let alertController = UIAlertController(title: "Message",
                                                                 message: "Upload success", preferredStyle: .alert)
                         let okAction = UIAlertAction(title: "OK", style: .default, handler: {
                             action in
@@ -74,7 +74,7 @@ class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UI
                         self.present(alertController, animated: true, completion: nil)
                     }
                     else{
-                        let alertController = UIAlertController(title: "Tips",
+                        let alertController = UIAlertController(title: "Message",
                                                                 message: "Upload fail", preferredStyle: .alert)
                         let okAction = UIAlertAction(title: "OK", style: .default, handler: {
                             action in
@@ -109,6 +109,9 @@ class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UI
             } else {
                 let warning = UIAlertController(title: "Camera failure", message: "Camera is not available ", preferredStyle: .actionSheet)
                 warning.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                warning.popoverPresentationController?.barButtonItem = self.navigationItem.rightBarButtonItem
+                warning.popoverPresentationController?.sourceView = self.view
+                warning.popoverPresentationController?.sourceRect = CGRect(x:self.view.frame.size.width/2 - 40, y:self.view.frame.height-100, width: 100, height: 40);
                 self.present(warning, animated: true, completion: nil)
             }
             
@@ -120,7 +123,7 @@ class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UI
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         actionSheet.popoverPresentationController?.barButtonItem = self.navigationItem.rightBarButtonItem
         actionSheet.popoverPresentationController?.sourceView = self.view;
-        actionSheet.popoverPresentationController?.sourceRect = CGRect(x:self.view.frame.size.width / 2 - 40, y:view.frame.height, width: 100, height: 40);
+        actionSheet.popoverPresentationController?.sourceRect = CGRect(x:self.view.frame.size.width / 2 - 40, y:self.view.frame.height-100, width: 100, height: 40);
         self.present(actionSheet, animated: true, completion: nil)
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
