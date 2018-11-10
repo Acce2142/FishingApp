@@ -66,12 +66,14 @@ class Network: NSObject {
             }
         }).resume()
     }
-    
+    /*
+     upload the picture
+     The picture will be downsize to half of the actual size due to the network limit
+     */
     func IdentifyFish(image:UIImage,date_Str:String,time_Str:String,lon:String,lat:String,callBack:@escaping (Bool) ->()) -> Void {
         Alamofire.upload(
             multipartFormData: { multipartFormData in
-               
-                multipartFormData.append(image.jpegData(compressionQuality: 1)!, withName: "image", fileName: "swift_file.jpeg", mimeType: "image/jpeg")
+                multipartFormData.append(image.jpegData(compressionQuality: 0.5)!, withName: "image", fileName: "swift_file.jpeg", mimeType: "image/jpeg")
                 multipartFormData.append("photo.jpeg".data(using: String.Encoding.utf8)!, withName: "photo")
                 multipartFormData.append("identifyfish".data(using: String.Encoding.utf8)!, withName: "action")
                 multipartFormData.append(date_Str.data(using: String.Encoding.utf8)!, withName: "date")
@@ -97,7 +99,6 @@ class Network: NSObject {
                             }
                         case .failure(_):
                             callBack(false)
-                            
                         }
                     }
                 case .failure(let encodingError):

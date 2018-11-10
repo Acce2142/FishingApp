@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Identify-->
         <scene sceneID="XtH-uS-E1s">
             <objects>
-                <viewController id="CPm-wn-akf" customClass="UploadViewController" customModule="FishProduct" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Identify" id="CPm-wn-akf" customClass="UploadViewController" customModule="FishProduct" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bOT-ve-ALd">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -276,7 +276,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="5Zg-f6-5fM"/>
+                    <tabBarItem key="tabBarItem" title="Identify" id="5Zg-f6-5fM"/>
                     <connections>
                         <outlet property="FishImage" destination="Wj8-It-UbD" id="Aeu-jb-vZD"/>
                         <outlet property="Map" destination="oPW-zm-Uie" id="9Po-xS-ajv"/>
