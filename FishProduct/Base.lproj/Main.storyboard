@@ -276,7 +276,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Identify" id="5Zg-f6-5fM"/>
+                    <tabBarItem key="tabBarItem" title="Upload identify" id="5Zg-f6-5fM"/>
                     <connections>
                         <outlet property="FishImage" destination="Wj8-It-UbD" id="Aeu-jb-vZD"/>
                         <outlet property="Map" destination="oPW-zm-Uie" id="9Po-xS-ajv"/>
