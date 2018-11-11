@@ -33,7 +33,6 @@ class HistoryViewController: UIViewController,UITableViewDelegate,UITableViewDat
             view.removeFromSuperview()
         }
         let rm:ReportModel = self.history[indexPath.row] as! ReportModel
-        
         let name_lb=UILabel(frame:CGRect(origin:CGPoint(x:20,y:8),size:CGSize(width:view.frame.width,height:20)))
         name_lb.backgroundColor=UIColor.white
         name_lb.text = rm.fish_name
@@ -42,6 +41,12 @@ class HistoryViewController: UIViewController,UITableViewDelegate,UITableViewDat
         cells.contentView.addSubview(name_lb)
         
         
+        let date = UILabel(frame:CGRect(origin:CGPoint(x:160,y:8),size:CGSize(width:view.frame.width,height:20)))
+        date.backgroundColor = UIColor.white
+        date.text = rm.date
+        date.textColor = UIColor.black
+        date.font = UIFont.systemFont(ofSize:14)
+        cells.contentView.addSubview(date)
         
         
         return cells
