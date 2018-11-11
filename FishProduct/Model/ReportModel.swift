@@ -6,7 +6,10 @@
 //  Copyright © 2018年 PPLINGO. All rights reserved.
 //
 
-import Foundation
+
+import UIKit
+
+
 class ReportModel: NSObject {
     var fish_name = ""
     var fish_id = ""

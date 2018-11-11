@@ -88,6 +88,8 @@ class ReportFishViewController: UIViewController,UITableViewDelegate,UITableView
             alertController.addAction(okAction)
             self.present(alertController, animated: true, completion: nil)
         case .authorizedWhenInUse, .authorizedAlways:
+            //save to core data first
+            CoreDataManage.sharedCoreData().InsertrReport(id: fm.fish_id, name: fm.fish_name, date: dateStr!, time: timeStr!, lon: longitudeStr!, lat: latitudeStr! );
             Network.sharedTool().ReportFish(fishid: fm.fish_id,image: fish_imageview.image,fishName: fm.fish_name, date: dateStr!, time: timeStr!, lon: longitudeStr!, lat: latitudeStr!) { (ret) in
                 if ret{
                     let alertController = UIAlertController(title: "Message",

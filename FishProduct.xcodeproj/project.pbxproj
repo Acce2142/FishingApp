@@ -35,6 +35,7 @@
 		2D3450B42184B61A007F2D16 /* CoreDataManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3450B32184B61A007F2D16 /* CoreDataManage.swift */; };
 		2D912ABA218942BB008DA116 /* SearchFishTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D912AB9218942BB008DA116 /* SearchFishTableViewController.swift */; };
 		87313A44219845DE00FFC1C3 /* ReportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87313A43219845DE00FFC1C3 /* ReportModel.swift */; };
+		87313A50219852BD00FFC1C3 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87313A4F219852BD00FFC1C3 /* HistoryViewController.swift */; };
 		87322BCC2195224D0088990A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87322BCB2195224D0088990A /* Alamofire.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		87322BCE219526010088990A /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 87322BCB2195224D0088990A /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -115,6 +116,7 @@
 		2D912AB9218942BB008DA116 /* SearchFishTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFishTableViewController.swift; sourceTree = "<group>"; };
 		87313A43219845DE00FFC1C3 /* ReportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportModel.swift; sourceTree = "<group>"; };
 		87313A492198484400FFC1C3 /* Report+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Report+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		87313A4F219852BD00FFC1C3 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		87322BCB2195224D0088990A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,7 +151,6 @@
 		2D34504F2183F3B0007F2D16 = {
 			isa = PBXGroup;
 			children = (
-				87313A492198484400FFC1C3 /* Report+CoreDataProperties.swift */,
 				87322BCB2195224D0088990A /* Alamofire.framework */,
 				2D3450B021845111007F2D16 /* FishData.xcdatamodeld */,
 				2D3450A62184172D007F2D16 /* Kingfisher.framework */,
@@ -174,6 +175,7 @@
 		2D34505A2183F3B0007F2D16 /* FishProduct */ = {
 			isa = PBXGroup;
 			children = (
+				87313A4C219851A700FFC1C3 /* ReportHistory */,
 				2D3450A021840816007F2D16 /* Model */,
 				2D3450992184020F007F2D16 /* Network */,
 				2D34508D2183FB1D007F2D16 /* FindFish */,
@@ -258,12 +260,21 @@
 		2D3450A021840816007F2D16 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				87313A492198484400FFC1C3 /* Report+CoreDataProperties.swift */,
 				2D3450A121840822007F2D16 /* FishModel.swift */,
 				2D3450AC21843CF3007F2D16 /* QuestionModel.swift */,
 				2D3450B32184B61A007F2D16 /* CoreDataManage.swift */,
 				87313A43219845DE00FFC1C3 /* ReportModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		87313A4C219851A700FFC1C3 /* ReportHistory */ = {
+			isa = PBXGroup;
+			children = (
+				87313A4F219852BD00FFC1C3 /* HistoryViewController.swift */,
+			);
+			path = ReportHistory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,6 +413,7 @@
 				2D1BE9102189379A00C6A2BF /* ReportListViewController.swift in Sources */,
 				2D3450922183FB44007F2D16 /* HomeViewController.swift in Sources */,
 				2D3450942183FB6C007F2D16 /* IdentifyViewController.swift in Sources */,
+				87313A50219852BD00FFC1C3 /* HistoryViewController.swift in Sources */,
 				2D34509B21840225007F2D16 /* Network.swift in Sources */,
 				2D3450AD21843CF3007F2D16 /* QuestionModel.swift in Sources */,
 				2D3450A221840822007F2D16 /* FishModel.swift in Sources */,

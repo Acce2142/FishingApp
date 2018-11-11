@@ -76,7 +76,7 @@ class FindFishViewController: UIViewController,UITableViewDelegate,UITableViewDa
         }
         let fm:FishModel = self.fishes[indexPath.row] as! FishModel
        
-        let name_lb=UILabel(frame:CGRect(origin:CGPoint(x:100,y:8),size:CGSize(width:200,height:20)))
+        let name_lb = UILabel(frame:CGRect(origin:CGPoint(x:100,y:8),size:CGSize(width:200,height:20)))
         name_lb.backgroundColor=UIColor.white
         name_lb.text = fm.fish_name
         name_lb.textColor = UIColor.black

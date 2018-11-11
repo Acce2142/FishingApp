@@ -54,13 +54,26 @@ class CoreDataManage: NSObject {
             fatalError("save fail：\(error)")
         }
     }
-    func InsertrReport(report:ReportModel?){
-        if report == nil{
-            return
+    
+    func InsertrReport(id:String, name:String,date:String,time:String,lon:String,lat:String){
+        if(!lon.isEmpty && !lat.isEmpty){
+            let app = UIApplication.shared.delegate as! AppDelegate
+            let context = app.persistentContainer.viewContext
+            let newReport = NSEntityDescription.insertNewObject(forEntityName: "Report", into: context) as! Report
+            newReport.id = id;
+            newReport.name = name;
+            newReport.date = date;
+            newReport.time = time;
+            newReport.lon = lon;
+            newReport.lat = lat;
+            do {
+                try context.save()
+                print("report success！")
+            } catch {
+                fatalError("save fail：\(error)")
+            }
+            
         }
-        let app = UIApplication.shared.delegate as! AppDelegate
-        let context = app.persistentContainer.viewContext
-        let newReport = NSEntityDescription.insertNewObject(forEntityName: "Report", into: context) as! Fish
     }
     func InsertFish(fish:FishModel?) {
         
@@ -148,6 +161,24 @@ class CoreDataManage: NSObject {
         
         return []
     }
+    func getAllReports() -> [ReportModel]{
+        let app = UIApplication.shared.delegate as! AppDelegate
+        let context = app.persistentContainer.viewContext
+        let request:NSFetchRequest = Report.fetchRequest()
+        do{
+            let result =  try context.fetch(request)
+            var arr :[ReportModel] = [] as! [ReportModel]
+            for cf in result{
+                arr.append(CoreReportToReportModel(cReport: cf))
+            }
+            return arr
+        }catch{
+            fatalError("query fail")
+        }
+        
+        return []
+        
+    }
     func FindAllFish() -> [FishModel] {
         let app = UIApplication.shared.delegate as! AppDelegate
         let context = app.persistentContainer.viewContext
@@ -218,6 +249,16 @@ class CoreDataManage: NSObject {
         fish.fish_restriction = cfish.restrictions!
         fish.scientificname = cfish.scientificname!
         return fish
+    }
+    func CoreReportToReportModel(cReport:Report) -> ReportModel {
+        let Report = ReportModel.init()
+        Report.fish_id = cReport.id!
+        Report.fish_name = cReport.name!
+        Report.date = cReport.date!
+        Report.time = cReport.time!
+        Report.lon = cReport.lon!
+        Report.lat = cReport.lat!
+        return Report
     }
     func CoreQuestionsToQuestionsModel(QUE:Questions) -> QuestionModel {
         let QA = QuestionModel.init()
