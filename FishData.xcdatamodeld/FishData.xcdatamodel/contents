@@ -15,10 +15,17 @@
         <attribute name="questionid" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="response" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="Report" representedClassName="Report" syncable="YES" codeGenerationType="class"/>
+    <entity name="Report" representedClassName="Report" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
         <element name="Fish" positionX="-63" positionY="-18" width="128" height="165"/>
         <element name="Questions" positionX="-54" positionY="54" width="128" height="90"/>
-        <element name="Report" positionX="-45" positionY="54" width="128" height="45"/>
+        <element name="Report" positionX="-45" positionY="54" width="128" height="135"/>
     </elements>
 </model>
