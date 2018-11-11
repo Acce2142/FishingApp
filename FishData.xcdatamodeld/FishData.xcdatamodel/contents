@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.18" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="17G3025" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Fish" representedClassName="Fish" isAbstract="YES" syncable="YES" codeGenerationType="class">
         <attribute name="commonnames" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="fishdescription" optional="YES" attributeType="String" syncable="YES"/>
@@ -15,8 +15,10 @@
         <attribute name="questionid" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="response" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="Report" representedClassName="Report" syncable="YES" codeGenerationType="class"/>
     <elements>
         <element name="Fish" positionX="-63" positionY="-18" width="128" height="165"/>
         <element name="Questions" positionX="-54" positionY="54" width="128" height="90"/>
+        <element name="Report" positionX="-45" positionY="54" width="128" height="45"/>
     </elements>
 </model>

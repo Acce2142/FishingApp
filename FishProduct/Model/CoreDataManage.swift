@@ -54,7 +54,14 @@ class CoreDataManage: NSObject {
             fatalError("save fail：\(error)")
         }
     }
-    
+    func InsertrReport(report:ReportModel?){
+        if report == nil{
+            return
+        }
+        let app = UIApplication.shared.delegate as! AppDelegate
+        let context = app.persistentContainer.viewContext
+        let newReport = NSEntityDescription.insertNewObject(forEntityName: "Report", into: context) as! Fish
+    }
     func InsertFish(fish:FishModel?) {
         
         if fish == nil{

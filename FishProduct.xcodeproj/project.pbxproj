@@ -34,6 +34,7 @@
 		2D3450B221845111007F2D16 /* FishData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D3450B021845111007F2D16 /* FishData.xcdatamodeld */; };
 		2D3450B42184B61A007F2D16 /* CoreDataManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3450B32184B61A007F2D16 /* CoreDataManage.swift */; };
 		2D912ABA218942BB008DA116 /* SearchFishTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D912AB9218942BB008DA116 /* SearchFishTableViewController.swift */; };
+		87313A44219845DE00FFC1C3 /* ReportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87313A43219845DE00FFC1C3 /* ReportModel.swift */; };
 		87322BCC2195224D0088990A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87322BCB2195224D0088990A /* Alamofire.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		87322BCE219526010088990A /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 87322BCB2195224D0088990A /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -112,6 +113,7 @@
 		2D3450B121845111007F2D16 /* FishData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FishData.xcdatamodel; sourceTree = "<group>"; };
 		2D3450B32184B61A007F2D16 /* CoreDataManage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManage.swift; sourceTree = "<group>"; };
 		2D912AB9218942BB008DA116 /* SearchFishTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFishTableViewController.swift; sourceTree = "<group>"; };
+		87313A43219845DE00FFC1C3 /* ReportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportModel.swift; sourceTree = "<group>"; };
 		87322BCB2195224D0088990A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -257,6 +259,7 @@
 				2D3450A121840822007F2D16 /* FishModel.swift */,
 				2D3450AC21843CF3007F2D16 /* QuestionModel.swift */,
 				2D3450B32184B61A007F2D16 /* CoreDataManage.swift */,
+				87313A43219845DE00FFC1C3 /* ReportModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 				2D34505C2183F3B0007F2D16 /* AppDelegate.swift in Sources */,
 				18FEDBD72193BD04008CB3BA /* UploadViewController.swift in Sources */,
 				2D3450B221845111007F2D16 /* FishData.xcdatamodeld in Sources */,
+				87313A44219845DE00FFC1C3 /* ReportModel.swift in Sources */,
 				2D3450B42184B61A007F2D16 /* CoreDataManage.swift in Sources */,
 				2D34509F21840749007F2D16 /* SerializationFish.swift in Sources */,
 				2D3450AF21843D91007F2D16 /* SerializationQuestion.swift in Sources */,
