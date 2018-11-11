@@ -34,7 +34,7 @@ class HistoryViewController: UIViewController,UITableViewDelegate,UITableViewDat
         }
         let rm:ReportModel = self.history[indexPath.row] as! ReportModel
         
-        let name_lb=UILabel(frame:CGRect(origin:CGPoint(x:100,y:8),size:CGSize(width:200,height:20)))
+        let name_lb=UILabel(frame:CGRect(origin:CGPoint(x:20,y:8),size:CGSize(width:view.frame.width,height:20)))
         name_lb.backgroundColor=UIColor.white
         name_lb.text = rm.fish_name
         name_lb.textColor = UIColor.black
@@ -42,12 +42,7 @@ class HistoryViewController: UIViewController,UITableViewDelegate,UITableViewDat
         cells.contentView.addSubview(name_lb)
         
         
-        let commonName_lb = UILabel(frame:CGRect(origin:CGPoint(x:100,y:30),size:CGSize(width:200,height:20)))
-        commonName_lb.backgroundColor = UIColor.white
-        commonName_lb.text = rm.date
-        commonName_lb.textColor = UIColor.black
-        commonName_lb.font = UIFont.systemFont(ofSize:14)
-        cells.contentView.addSubview(commonName_lb)
+        
         
         return cells
     }
@@ -56,6 +51,8 @@ class HistoryViewController: UIViewController,UITableViewDelegate,UITableViewDat
     @IBOutlet weak var mytableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        mytableView?.frame = CGRect(x: 0, y: 64, width: view.frame.width, height: view.frame.height)
+        mytableView?.tableFooterView = UIView()
         self.view.backgroundColor = UIColor.white
         
         mytableView?.tableFooterView = UIView()
