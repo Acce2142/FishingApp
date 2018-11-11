@@ -114,6 +114,7 @@
 		2D3450B32184B61A007F2D16 /* CoreDataManage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManage.swift; sourceTree = "<group>"; };
 		2D912AB9218942BB008DA116 /* SearchFishTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFishTableViewController.swift; sourceTree = "<group>"; };
 		87313A43219845DE00FFC1C3 /* ReportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportModel.swift; sourceTree = "<group>"; };
+		87313A492198484400FFC1C3 /* Report+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Report+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		87322BCB2195224D0088990A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +149,7 @@
 		2D34504F2183F3B0007F2D16 = {
 			isa = PBXGroup;
 			children = (
+				87313A492198484400FFC1C3 /* Report+CoreDataProperties.swift */,
 				87322BCB2195224D0088990A /* Alamofire.framework */,
 				2D3450B021845111007F2D16 /* FishData.xcdatamodeld */,
 				2D3450A62184172D007F2D16 /* Kingfisher.framework */,
