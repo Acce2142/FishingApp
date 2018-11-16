@@ -31,7 +31,7 @@ class ReportFishViewController: UIViewController,UITableViewDelegate,UITableView
         fish_imageview.addGestureRecognizer(tap)
     
         
-        infoTableView.frame = CGRect(x: 0, y: 290, width: view.frame.width, height: view.frame.height - 330)
+        
         infoTableView?.tableFooterView = UIView()
         infoTableView?.delegate = self
         infoTableView?.dataSource = self

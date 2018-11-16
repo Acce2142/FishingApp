@@ -16,7 +16,7 @@ class IdentifyViewController: UIViewController,UITableViewDelegate,UITableViewDa
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
         
-        questionTbview.frame = CGRect(x: 0, y: 64, width: view.frame.width, height: view.frame.height)
+        //questionTbview.frame = CGRect(x: 0, y: 64, width: view.frame.width, height: view.frame.height)
         questionTbview?.tableFooterView = UIView()
         questionTbview?.delegate = self
         questionTbview?.dataSource = self

@@ -11,7 +11,7 @@ class ReportListViewController: UIViewController,UITableViewDelegate,UITableView
     let fishelist :NSMutableArray = NSMutableArray.init()
     override func viewDidLoad() {
         super.viewDidLoad()
-        listtableview?.frame = CGRect(x: 0, y: 64, width: view.frame.width, height: view.frame.height)
+        //listtableview?.frame = CGRect(x: 0, y: 64, width: view.frame.width, height: view.frame.height)
         listtableview?.tableFooterView = UIView()
         listtableview?.delegate = self
         listtableview?.dataSource = self

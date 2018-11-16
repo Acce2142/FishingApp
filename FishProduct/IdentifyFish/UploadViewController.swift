@@ -87,7 +87,7 @@ class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UI
             
         } else {
             let alertController = UIAlertController(title: "Tips",
-                                                    message: "Please choose a image first", preferredStyle: .alert)
+                                                    message: "Please pick up ans image of the fish first", preferredStyle: .alert)
             let okAction = UIAlertAction(title: "OK", style: .default, handler: {
                 action in
                 self.navigationController?.popViewController(animated: true)
