@@ -34,6 +34,7 @@
 		2D3450B221845111007F2D16 /* FishData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D3450B021845111007F2D16 /* FishData.xcdatamodeld */; };
 		2D3450B42184B61A007F2D16 /* CoreDataManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3450B32184B61A007F2D16 /* CoreDataManage.swift */; };
 		2D912ABA218942BB008DA116 /* SearchFishTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D912AB9218942BB008DA116 /* SearchFishTableViewController.swift */; };
+		870D624B21A0BDD5005B1181 /* EZLoadingActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 870D624A21A0BDD5005B1181 /* EZLoadingActivity.framework */; };
 		87313A44219845DE00FFC1C3 /* ReportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87313A43219845DE00FFC1C3 /* ReportModel.swift */; };
 		87313A50219852BD00FFC1C3 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87313A4F219852BD00FFC1C3 /* HistoryViewController.swift */; };
 		87322BCC2195224D0088990A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87322BCB2195224D0088990A /* Alamofire.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -114,6 +115,7 @@
 		2D3450B121845111007F2D16 /* FishData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FishData.xcdatamodel; sourceTree = "<group>"; };
 		2D3450B32184B61A007F2D16 /* CoreDataManage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManage.swift; sourceTree = "<group>"; };
 		2D912AB9218942BB008DA116 /* SearchFishTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFishTableViewController.swift; sourceTree = "<group>"; };
+		870D624A21A0BDD5005B1181 /* EZLoadingActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EZLoadingActivity.framework; sourceTree = "<group>"; };
 		87313A43219845DE00FFC1C3 /* ReportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportModel.swift; sourceTree = "<group>"; };
 		87313A492198484400FFC1C3 /* Report+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Report+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		87313A4F219852BD00FFC1C3 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D3450A321840D9A007F2D16 /* SwiftyJSON.framework in Frameworks */,
+				870D624B21A0BDD5005B1181 /* EZLoadingActivity.framework in Frameworks */,
 				87322BCC2195224D0088990A /* Alamofire.framework in Frameworks */,
 				2D3450A72184172D007F2D16 /* Kingfisher.framework in Frameworks */,
 			);
@@ -151,6 +154,7 @@
 		2D34504F2183F3B0007F2D16 = {
 			isa = PBXGroup;
 			children = (
+				870D624A21A0BDD5005B1181 /* EZLoadingActivity.framework */,
 				87322BCB2195224D0088990A /* Alamofire.framework */,
 				2D3450B021845111007F2D16 /* FishData.xcdatamodeld */,
 				2D3450A62184172D007F2D16 /* Kingfisher.framework */,

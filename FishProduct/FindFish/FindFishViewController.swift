@@ -7,7 +7,7 @@
 
 import UIKit
 import Kingfisher
-
+import CoreData
 class FindFishViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
   
   
@@ -36,7 +36,6 @@ class FindFishViewController: UIViewController,UITableViewDelegate,UITableViewDa
     func getFishesList() -> Void {
         Network.sharedTool().GetFishList(urlstr: "http://www.partiklezoo.com/fish/?action=fishlist") { (dataArray, true) in
             if dataArray == nil{
-                
                 self.internet = false
                 DispatchQueue.main.async {
                     let arr:[FishModel] = CoreDataManage.sharedCoreData().FindAllFish()
@@ -82,7 +81,7 @@ class FindFishViewController: UIViewController,UITableViewDelegate,UITableViewDa
         name_lb.textColor = UIColor.black
         name_lb.font=UIFont.systemFont(ofSize:14)
         cells.contentView.addSubview(name_lb)
-            
+        
         let url = URL(string: String(format: "http://partiklezoo.com/fish/%@", fm.image))
         let fish_imageView = UIImageView(frame:CGRect(origin:CGPoint(x:20,y:5),size:CGSize(width:50,height:50)))
         fish_imageView.layer.cornerRadius = 8

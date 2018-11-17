@@ -1,0 +1,4 @@
+framework module EZLoadingActivity {
+  header "EZLoadingActivity-Swift.h"
+  requires objc
+}

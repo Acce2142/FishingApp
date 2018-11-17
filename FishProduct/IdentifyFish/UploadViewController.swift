@@ -4,7 +4,7 @@ import UIKit
 import SwiftyJSON
 import CoreLocation
 import MapKit
-
+import EZLoadingActivity
 class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate{
     var dateStr = ""
     var timeStr = ""
